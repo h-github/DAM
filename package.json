@@ -59,7 +59,7 @@
         "karma-jasmine-html-reporter": "^0.2.0",
         "karma-chrome-launcher": "^1.0.1",
         "karma-spec-reporter": "0.0.23",
-        "lodash": "~3.9.3",
+        "lodash": "~4.0.0",
         "main-bower-files": "~2.8.0",
         "merge-stream": "~0.1.7",
         "phantomjs": "~2.1.3",
