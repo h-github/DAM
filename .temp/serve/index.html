@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="ngDam">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clinic X</title>
+    <!--bower:css-->
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material-icons/angular-material-icons.css" />
+    <!--endbower-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--inject:css-->
+    <link rel="stylesheet" href="app/style.css">
+    <!--endinject-->
+</head>
+
+<body ng-cloak>
+    <div class="index__main-container" ui-view flex></div>
+    <!--bower:js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <!--endbower-->
+
+    <!--inject:js-->
+    <script src="app/index.module.js"></script>
+    <script src="app/main/services/userSignin/user.service.local-storage.js"></script>
+    <script src="app/main/services/userSignin/user.service.js"></script>
+    <script src="app/main/services/userSignin/flash.service.js"></script>
+    <script src="app/main/services/userSignin/authentication.service.js"></script>
+    <script src="app/components/signin/register.controller.js"></script>
+    <script src="app/components/signin/login.controller.js"></script>
+    <script src="app/components/navigation/navigation.module.js"></script>
+    <script src="app/components/navigation/sidebar.controller.js"></script>
+    <script src="app/components/navigation/progress.service.js"></script>
+    <script src="app/components/navigation/navigation.service.js"></script>
+    <script src="app/components/navigation/navbar.controller.js"></script>
+    <script src="app/components/account/account.module.js"></script>
+    <script src="app/components/account/account.controller.js"></script>
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/index.run.js"></script>
+    <script src="app/index.router.js"></script>
+    <script src="app/index.config.js"></script>
+    <!--endinject-->
+</body>
+
+</html>
