@@ -24,3 +24,16 @@ It can be generated and retained at the time of ingestion of the asset simultane
 
 Types of system:
 Cloud-based digital asset management systems
+
+
+
+
+Common image organizers features:
+- Multiple thumbnail previews are viewable on a single screen and printable on a single page. (Contact Sheet)
+- Images can be organized into albums
+- Albums can be organized into collections
+- Adding tags (also known as keywords, categories, labels or flags). Tags can be stored externally, or in industry-standard IPTC or XMP headers inside each image file or in sidecar files.[3]
+- Resizing, exporting, e-mailing and printing.
+
+Image Organizer:
+Manual image organizers. 
