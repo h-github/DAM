@@ -17,7 +17,7 @@
                     'default': '500' // use shade 200 for default, and keep all other shades the same
                 })
                 .warnPalette('deep-orange')
-                .backgroundPalette('blue-grey').dark();
+                .backgroundPalette('grey').dark();
         })
         .config(['$locationProvider', function($locationProvider) {
             $locationProvider.html5Mode({
