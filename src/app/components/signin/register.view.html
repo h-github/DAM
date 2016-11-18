@@ -1,0 +1,40 @@
+<div class="register__container" layout="row" layout-align="center start" ng-cloak layout-fill layout-margin>
+    <md-content layout-padding flex-xs="100" flex-sm="80" flex-md="60" flex-lg="40" flex-xl="20">
+        <form name="registerForm" ng-submit="vm.register()" role="form">
+            <div layout="column">
+                <md-input-container>
+                    <label>First name</label>
+                    <input type="text" name="clientFirstName" ng-model="vm.user.firstName" required />
+                    <div ng-messages="registerForm.clientFirstName.$error">
+                        <div ng-message="required">First name is required!</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Last name</label>
+                    <input type="text" name="clientLastName" ng-model="vm.user.lastName" required />
+                    <div ng-messages="registerForm.clientLastName.$error">
+                        <div ng-message="required">Last name is required!</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Username</label>
+                    <input type="text" name="clientUsername" ng-model="vm.user.username" required>
+                    <div ng-messages="registerForm.clientUsername.$error">
+                        <div ng-message="required">Username is required!</div>
+                    </div>
+                </md-input-container>
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" name="clientPassword" ng-model="vm.user.password" required>
+                    <div ng-messages="registerForm.clientPassword.$error">
+                        <div ng-message="required">Password is required!</div>
+                    </div>
+                </md-input-container>
+            </div>
+            <div>
+                <md-button class="md-accent" type="submit" ng-disabled="form.$invalid || vm.dataLoading">Register</md-button>
+                <md-button class="md-primary" ui-sref="login">Cancel</md-button>
+            </div>
+        </form>
+    </md-content>
+</div>

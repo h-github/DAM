@@ -1,0 +1,27 @@
+<div class="login__container" layout="row" layout-align="center start" ng-cloak layout-fill layout-margin>
+    <md-content layout-padding flex-xs="100" flex-sm="80" flex-md="60" flex-lg="40" flex-xl="20">
+        <form name="loginForm" ng-submit="vm.login()">
+            <div layout="column">
+                <md-input-container>
+                    <label>Username</label>
+                    <input required name="clientUsername" ng-model="vm.username">
+                    <div ng-messages="loginForm.clientUsername.$error">
+                        <div ng-message="required">Username is required!</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" required name="clientPassword" ng-model="vm.password">
+                    <div ng-messages="loginForm.clientPassword.$error">
+                        <div ng-message="required">Password is required!</div>
+                    </div>
+                </md-input-container>
+            </div>
+            <div>
+                <md-button class="md-accent" type="submit" ng-disabled="form.$invalid || vm.dataLoading">Login</md-button>
+                <md-button class="md-primary" ui-sref="register">Register</md-button>
+            </div>
+        </form>
+    </md-content>
+</div>
