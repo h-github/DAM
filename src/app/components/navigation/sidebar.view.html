@@ -15,4 +15,16 @@
             <p> Accounts </p>
         </md-list-item>
     </md-list>
+    <div ng-hide="vm.showAPIBottom">
+        <span>Authorize access to Drive API</span>
+        <!--Button for the user to click to initiate auth sequence -->
+        <button id="authorize-button" onclick="vm.handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
+    <ul>
+        <li ng-repeat="files in vm.getFiles()">
+            <span>{{file.name}} + ' (' + {{file.id}} + ')'</span>
+        </li>
+    </ul>
 </md-sidenav>
