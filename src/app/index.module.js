@@ -10,6 +10,6 @@
 
         //dev
         'navigation',
-        'account'
+        'drive'
     ]);
 }());

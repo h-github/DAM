@@ -22,10 +22,7 @@
                         controller: 'SidebarCtrl as vm'
                     }
                 }
-            });
-
-        $stateProvider
-            .state('login', {
+            }).state('login', {
                 url: '/login',
                 public: true,
                 views: {
@@ -38,9 +35,7 @@
                         controller: 'RegisterController as vm'
                     }
                 }
-            });
-        $stateProvider
-            .state('register', {
+            }).state('register', {
                 url: '/register',
                 public: true,
                 views: {
