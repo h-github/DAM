@@ -1,6 +1,6 @@
 <div ng-repeat="file in vm.fileList" layout="row">
-    <md-button ng-click="vm.goToFolder(file.id)" flex="10" layout="row">
+    <md-button ng-click="vm.goToFolder(file.id, file.name)" flex="15" layout="row">
         <img src="{{file.iconLink}}"></img>
-        <span flex>{{file.name}}</span>
+        <span flex style="text-align: left; padding-left:15px;">{{file.name}}</span>
     </md-button>
 </div>

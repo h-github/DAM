@@ -17,7 +17,7 @@
                     }
                 }
             }).state('app.folders.folder', {
-                url: '/folders/{folderId}',
+                url: '/{folderId}',
                 views: {
                     'main@app': {
                         templateUrl: 'app/components/drive/account/folder/folder.view.html',

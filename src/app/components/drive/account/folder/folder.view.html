@@ -1,1 +1,23 @@
-<div>{{vm.test}}</div>
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{vm.folder.name}}</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content layout="row" layout-align="space-between">
+        {{vm.selectedFile.name}}
+        <img src="{{vm.selectedFileThumbnailLink}}"></img>
+    </md-card-content>
+</md-card>
+<div ng-repeat="file in vm.fileList" layout="row">
+    <md-button ng-click="vm.getFileDetails($index)" flex="15" layout="row">
+        <img src="{{file.iconLink}}"></img>
+        <span flex style="text-align: left; padding-left:15px;">{{file.name}}</span>
+    </md-button>
+</div>
+<table>
+    <tr ng-repeat="(key, value) in vm.selectedFile">
+        <td> {{key}} </td>
+        <td> {{value}} </td>
+    </tr>
+</table>
